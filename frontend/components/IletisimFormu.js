@@ -87,7 +87,7 @@ const IletisimFormu = () => {
           {errors.ad && <p data-testid="error">Hata: {errors.ad}</p>}
         </div>
 
-        <div>
+        <div data-testid="soyaderror">
           <label htmlFor="soyad">Soyad*</label>
           <input
             onChange={handleChange}
@@ -100,7 +100,7 @@ const IletisimFormu = () => {
           {errors.soyad && <p data-testid="error">Hata: {errors.soyad}</p>}
         </div>
 
-        <div>
+        <div data-testid="emailerror">
           <label htmlFor="email">Email*</label>
           <input
             onChange={handleChange}
