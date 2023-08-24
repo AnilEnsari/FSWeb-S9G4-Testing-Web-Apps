@@ -82,7 +82,7 @@ const IletisimFormu = () => {
             value={form.ad}
             id="ad"
             data-testid="ad"
-            placeholder="İlhan"
+            placeholder="Mauro"
           />
           {errors.ad && <p data-testid="error">Hata: {errors.ad}</p>}
         </div>
@@ -91,10 +91,11 @@ const IletisimFormu = () => {
           <label htmlFor="soyad">Soyad*</label>
           <input
             onChange={handleChange}
+            data-testid="soyad"
             id="soyad"
             name="soyad"
             value={form.soyad}
-            placeholder="Mansız"
+            placeholder="Icardi"
           />
           {errors.soyad && <p data-testid="error">Hata: {errors.soyad}</p>}
         </div>
@@ -105,8 +106,9 @@ const IletisimFormu = () => {
             onChange={handleChange}
             id="email"
             name="email"
+            data-testid="email"
             value={form.email}
-            placeholder="yüzyılıngolcüsü@hotmail.com"
+            placeholder="aşkınolayım@hotmail.com"
           />
           {errors.email && <p data-testid="error">Hata: {errors.email}</p>}
         </div>
@@ -117,6 +119,7 @@ const IletisimFormu = () => {
             onChange={handleChange}
             name="mesaj"
             id="mesaj"
+            data-testid="mesaj"
             value={form.mesaj}
           />
           {errors.mesaj && <p data-testid="error">Error: {errors.mesaj}</p>}
@@ -124,7 +127,7 @@ const IletisimFormu = () => {
 
         {displayData && <Goruntule form={form} />}
 
-        <button>Gönder</button>
+        <button data-testid="button">Gönder</button>
       </form>
     </div>
   );
